@@ -56,14 +56,14 @@ define(['N/record', 'N/search', 'N/email', 'N/render', 'N/transaction'],
 
                log.debug('requestBody en string',JSON.stringify(requestBody));
                var pesoSucio = requestBody.reading;
-               log.debug("pesoSucio",pesoSucio);
+               //log.debug("pesoSucio",pesoSucio);
                var partes = pesoSucio.split(":");
                var peso = partes[1];
                log.debug("peso",peso);
 
                 var resObj = {
-                    status: "",
-                    msg:"Saludos desde NetSuite!"
+                    status: "200",
+                    msg:"OK"
                 }
                 return resObj;
 
